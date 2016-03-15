@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_l_white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/header_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/_d_green"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <Button
+            android:id="@+id/btn_header_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/header_title"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/header_title"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/back_button_selector"
+            android:clickable="true"
+            android:onClick="onBackButtonClick" />
+
+        <TextView
+            android:id="@+id/header_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Tarjeta de identificación"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/text_msg"
+                android:layout_width="match_parent"                
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/transparent"
+                android:gravity="center|center_vertical"
+                android:text="Por favor muestra la pantalla al establecimiento."
+                android:textColor="#128B82"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/text_msg_"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/text_checkin_confirm_message"
+                android:textColor="#4d4d4d"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:id="@+id/relative_frame"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginTop="8dp"
+                android:background="#174747" >
+
+                <RelativeLayout
+                    android:id="@+id/relative_images"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/image" >
+
+                    <ImageView
+                        android:id="@+id/custom_profile_pic"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_centerVertical="true"
+                        android:scaleType="fitXY"
+                        android:visibility="gone" />
+
+                    <com.facebook.widget.ProfilePictureView
+                        android:id="@+id/selection_profile_pic"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_centerVertical="true"
+                        android:scaleType="fitXY"
+                        android:visibility="visible"
+                        facebook:preset_size="large" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_member"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/relative_images"
+                    android:background="@android:color/transparent"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/txt_member"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingLeft="2dp"
+                        android:text="Numero de membresía:"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/txt_member_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/txt_member"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/validity_bar"
+                    android:layout_width="190dp"
+                    android:layout_height="90dp"
+                    android:layout_alignLeft="@+id/layout_member"
+                    android:layout_below="@+id/layout_member"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rectangle"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/validity"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:background="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/remainingdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="#174747" >
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="center|left"
+                    android:singleLine="true"
+                    android:text="Name"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relative_frame"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp" >
+
+                <EditText
+                    android:id="@+id/edt_total_bill"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_selector"
+                    android:ems="10"
+                    android:hint="Cantidad a pagar $"
+                    android:inputType="number|numberDecimal"
+                    android:padding="5dp"
+                    android:textColor="@color/_l_black"
+                    android:textColorHint="#6a6a6a"
+                    android:textSize="15sp" >
+                </EditText>
+
+                <EditText
+                    android:id="@+id/edt_bite_discount"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/edt_total_bill"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_selector"
+                    android:ems="10"
+                    android:hint="Cantidad a pagar con Bite $"
+                    android:inputType="number|numberDecimal"
+                    android:padding="5dp"
+                    android:textColor="@color/_l_black"
+                    android:textColorHint="#6a6a6a"
+                    android:textSize="15sp" >
+                </EditText>
+
+                <Button
+                    android:id="@+id/btn_confirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/edt_bite_discount"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button_selector"
+                    android:text="CONFIRMAR"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

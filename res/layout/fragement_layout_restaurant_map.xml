@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_l_black"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/header_bar"
+        layout="@layout/titlebar" />
+
+    <!-- <FrameLayout -->
+    <!-- android:id="@+id/id_map_container" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="match_parent" > -->
+
+
+    <!-- Put fragments dynamically -->
+    <!-- </FrameLayout> -->
+
+    <com.google.android.gms.maps.MapView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- <fragment -->
+    <!-- android:id="@+id/mapid" -->
+    <!-- android:name="com.google.android.gms.maps.SupportMapFragment" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="match_parent" /> -->
+
+</LinearLayout>

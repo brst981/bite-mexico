@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_l_white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/header_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/_d_green"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <ImageView
+            android:id="@+id/btn_back_loginpage"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:src="@drawable/icon_back" />
+
+        <TextView
+            android:id="@+id/header_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="Iniciar sesión"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#545454"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/ic_bitemexico"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="25dp"
+            android:text="Inicia sesión con tu cuenta o regístrate gratis"
+            android:textColor="#ffffff"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_registerpage"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_register_green_corner_selector"
+            android:text="Registro"
+            android:textColor="@color/_green"
+            android:textStyle="bold" />
+
+        <!-- <TextView -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_gravity="center_horizontal" -->
+        <!-- android:layout_marginTop="35dp" -->
+        <!-- android:text="Remember the food and meals you love" -->
+        <!-- android:textColor="#ffffff" -->
+        <!-- android:textStyle="bold" -->
+        <!-- android:textSize="16dp"/> -->
+
+        <EditText
+            android:id="@+id/loginEmail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/editbox_step2_corner_selector"
+            android:ems="10"
+            android:hint="Correo"
+            android:inputType="textPersonName"
+            android:padding="5dp"
+            android:textColor="@color/_l_black"
+            android:textSize="15sp" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/loginpassword"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/editbox_step2_corner_selector"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:padding="5dp"
+            android:password="true"
+            android:textColor="@color/_l_black"
+            android:textSize="15sp" >
+        </EditText>
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/button_login_white_corner_selector"
+            android:text="Iniciar sesión"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

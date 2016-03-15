@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="no_of_people">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+    </string-array>
+    
+    
+
+    
+    <string-array name="cuisine">
+        <item>Americana</item>
+        <item>Arab</item>
+        <item>BBQ/Steak</item>
+        <item>China</item>
+        <item>Cafetería</item>
+        <item>Ensaladas</item>
+        <item>Español</item>
+        <item>Francesa</item>
+        <item>Griego</item>
+        <item>Indu</item>
+        <item>Italiana</item>
+        <item>Japonesa</item>
+        <item>Yogurth y Fruta</item>
+        <item>Barbacoa</item>
+        <item>Asador</item>
+        
+    </string-array>
+    <string-array name="days_array">
+        <item>Disponibilidad</item>
+        <item>Lunes</item>
+        <item>Martes</item>
+        <item>Miércoles</item>
+        <item>Jueves</item>
+        <item>Viernes</item>
+        <item>Sábado</item>
+        <item>Domingo</item>
+    </string-array>
+    <string-array name="offer_type">
+        <item>Tipo de Oferta</item>
+        <item>2 por 1 en alimentos</item>
+        <item>50% de descuento en alimentos</item>
+       
+    </string-array>
+
+</resources>
