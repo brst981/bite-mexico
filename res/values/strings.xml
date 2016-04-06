@@ -12,7 +12,7 @@
 
     <!-- Realese key for maps -->
     
-    <string name="g_map_id">AIzaSyAVX6KWN9EIUfsGESJVGvpQPGVVAnYn8Cc</string>
+    <string name="g_map_id">IzaSyBkToEyzV5CSfRsicPD_eqgw5P0DX5kW_M</string>
 
     <!-- Stripe api key -->
     <string name="pk_test">pk_test_kfsjV0T4mJnVzGkjMwYAKAAY</string>
@@ -22,7 +22,7 @@
     <string name="text_bite_mexico">Bite México es un club de comensales a gran escala en forma de una aplicación móvil que proporciona a sus miembros descuentos en restaurantes.
         \nComer en restaurantes puede ser muy caro,esta es la principal razón para que las personas no lo hagan tan seguido como les gustaría.
         \nCon nuestra aplicación intuitiva serás capaz de localizar todos nuestros restaurantes participantes con solo tocar un botón y ahorrarás cientos o miles de pesos en el transcurso del año.</string>
-    <string name="header_title_membership_plan">Sleecciona el tipo de membresía</string>
+    <string name="header_title_membership_plan">Selecciona el tipo de membresía</string>
     <string name="text_membership_one_month">Free trial is for one month</string>
     <string name="text_membership_six_month">6 months Membership</string>
     <string name="text_membership_twelve_month">12 months Membership</string>

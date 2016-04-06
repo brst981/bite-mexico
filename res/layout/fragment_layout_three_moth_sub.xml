@@ -60,10 +60,10 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/app_logo"
                 android:layout_centerHorizontal="true"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
                 android:layout_marginTop="20dp"
                 android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
                 android:text="Activa tu membresía 30 dias gratis solo haz click en el botón de abajo para compartir en Facebook."
                 android:textSize="18sp" />
 
@@ -75,10 +75,9 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginTop="30dp"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp"
                 android:orientation="horizontal"
-                 >
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp" >
 
                 <CheckBox
                     android:id="@+id/terms"
@@ -114,14 +113,31 @@
                     android:textSize="13sp" />
             </LinearLayout>
 
-            <Button
-                android:id="@+id/shareFb"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/termsbar"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="40dp"
-                android:background="@drawable/fb_share" />
+          
+
+                <Button
+                    android:id="@+id/shareFb"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:layout_below="@+id/termsbar"                    
+                    android:background="@drawable/fb_share" />
+
+                <Button
+                    android:id="@+id/btnSkip"
+                    android:visibility="gone"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_below="@+id/shareFb"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/button_login_white_corner_selector"                    
+                    android:text="Omitir" />
         </RelativeLayout>
     </ScrollView>
 

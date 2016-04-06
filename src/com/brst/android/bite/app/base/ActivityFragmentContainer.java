@@ -37,9 +37,7 @@ public class ActivityFragmentContainer extends BaseContainerFragment {
 			getChildFragmentManager().popBackStack(null,
 					FragmentManager.POP_BACK_STACK_INCLUSIVE);
 		}
-
 	}
-
 	private void initView() {
 		Log.i(TAG, "On InitView");
 		Home home = new Home();

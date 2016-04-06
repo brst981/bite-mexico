@@ -910,6 +910,8 @@ public class LoginBiteBc extends Activity implements OnClickListener,
 
 					@Override
 					public void onClick(DialogInterface dialog, int which) {
+						
+						
 
 						Intent i = new Intent(
 								Intent.ACTION_PICK,
@@ -1051,7 +1053,7 @@ public class LoginBiteBc extends Activity implements OnClickListener,
 
 		// set dialog message
 		alertDialogBuilder.setMessage(message).setCancelable(false)
-				.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+				.setPositiveButton("De acuerdo", new DialogInterface.OnClickListener() {
 					public void onClick(DialogInterface dialog, int id) {
 						// if this button is clicked, close
 						// current activity

@@ -128,6 +128,7 @@
                         android:inputType="text"
                         android:padding="5dp"
                         android:textColor="@color/_l_black"
+                        
                         android:textSize="15sp" >
                     </EditText>
                 </FrameLayout>
@@ -152,6 +153,7 @@
                     android:inputType="text"
                     android:padding="5dp"
                     android:textColor="@color/_l_black"
+                    
                     android:textSize="15sp" >
                 </EditText>
 
@@ -166,7 +168,7 @@
                     android:hint="Confirmar correo"
                     android:inputType="text"
                     android:padding="5dp"
-                    android:textColor="@color/_l_black"
+                    android:textColor="@color/_l_black"                    
                     android:textSize="15sp" >
                 </EditText>
 
@@ -181,7 +183,7 @@
                     android:hint="Teléfono"
                     android:inputType="number"
                     android:padding="5dp"
-                    android:textColor="@color/_l_black"
+                    android:textColor="@color/_l_black"                    
                     android:textSize="15sp" >
                 </EditText>
 
@@ -196,7 +198,7 @@
                     android:hint="Contraseña"
                     android:inputType="textPassword"
                     android:padding="5dp"
-                    android:password="true"
+                    android:password="true"                    
                     android:textColor="@color/_l_black"
                     android:textSize="15sp" >
                 </EditText>
@@ -213,7 +215,7 @@
                     android:inputType="textPassword"
                     android:padding="5dp"
                     android:password="true"
-                    android:textColor="@color/_l_black"
+                    android:textColor="@color/_l_black"                    
                     android:textSize="15sp" >
                 </EditText>
 

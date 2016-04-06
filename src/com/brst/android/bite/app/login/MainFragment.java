@@ -45,6 +45,7 @@ import com.brst.android.bitemaxico.app.R;
 import com.facebook.Request;
 import com.facebook.Response;
 import com.facebook.Session;
+import com.facebook.SessionLoginBehavior;
 import com.facebook.SessionState;
 import com.facebook.UiLifecycleHelper;
 import com.facebook.model.GraphUser;
@@ -85,10 +86,11 @@ public class MainFragment extends Fragment {
 		uiHelper = new UiLifecycleHelper(getActivity(), callback);
 		uiHelper.onCreate(savedInstanceState);
 		sharedpreferences = getActivity().getSharedPreferences(
-				BiteBc.MyPREFERENCES, Context.MODE_APPEND);
+				BiteBc.MyPREFERENCES, Context.MODE_APPEND);		
+		//callback.setLoginBehavior(SessionLoginBehavior.SUPPRESS_SSO);
 
 	};
-
+ 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {

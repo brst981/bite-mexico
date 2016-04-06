@@ -193,7 +193,7 @@ public class MemberShipStepTwoFragment extends Fragment implements
 					new TokenCallback() {
 						public void onSuccess(Token token) {
 							// LogMsg.LOG(getActivity(), token.toString());
-							Log.e("TOKEN", token.toString());
+							//Log.e("TOKEN", token.toString());
 							sendTokenToServer(token);
 
 						}

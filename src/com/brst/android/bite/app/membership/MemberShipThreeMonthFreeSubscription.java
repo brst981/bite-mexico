@@ -32,7 +32,6 @@ import com.android.volley.Request.Method;
 import com.android.volley.VolleyError;
 import com.android.volley.VolleyLog;
 import com.android.volley.toolbox.StringRequest;
-import com.brst.android.bitemaxico.app.R;
 import com.brst.android.bite.app.constant.AppConstant.BiteBc;
 import com.brst.android.bite.app.constant.WSConstant;
 import com.brst.android.bite.app.constant.WSConstant.DataKey;
@@ -44,28 +43,35 @@ import com.brst.android.bite.app.home.HomeActivity;
 import com.brst.android.bite.app.setting.TermAndConditionFragment;
 import com.brst.android.bite.app.util.LogMsg;
 import com.brst.android.bite.app.util.UI;
+import com.brst.android.bitemaxico.app.R;
 import com.facebook.FacebookException;
 import com.facebook.FacebookOperationCanceledException;
+import com.facebook.Request;
+import com.facebook.Response;
 import com.facebook.Session;
 import com.facebook.SessionState;
 import com.facebook.UiLifecycleHelper;
+import com.facebook.model.GraphUser;
 import com.facebook.widget.FacebookDialog;
 import com.facebook.widget.WebDialog;
 import com.facebook.widget.WebDialog.OnCompleteListener;
 
 public class MemberShipThreeMonthFreeSubscription extends Fragment implements
 		OnClickListener {
-	Button shareButton;
-	CheckBox terms;
+	private Button shareButton,btnSkip;
+	private CheckBox terms;
+
 
 	private static String TAG = "MemberShipStepOneFragment";
 
 	SharedPreferences sharedpreferences;
+	private Boolean facebookLoginResponse=false;
 
 	public static final String ARG_PLAN_ID = "id";
 	public static final String ARG_NAME = "name";
 	public static final String ARG_PRICE = "price";
 	public static final String ARG_SUB_TOTAL = "subTotal";
+	private boolean isResumed = false;
 
 	TextView termandcondition;
 
@@ -103,7 +109,27 @@ public class MemberShipThreeMonthFreeSubscription extends Fragment implements
 		mString_message = name;
 		return fragment;
 	}
+	private void onSessionStateChange(Session session, SessionState state,
+			Exception exception) {
+        Log.e("session changed","changed");
 
+		if (isResumed) {
+			if (state.isOpened()) {
+
+				makeMeRequest(session);
+			} else if (state.isClosed()) {
+
+				Editor editor = sharedpreferences.edit();
+				//editor.putString("SECTION_PHP", null);
+				// editor.putString("LASTNAME",
+				// user.getuFacebookId());
+				Log.e("close","close");
+
+				editor.commit();
+
+			}
+		}
+	}
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -117,6 +143,9 @@ public class MemberShipThreeMonthFreeSubscription extends Fragment implements
 		user = uDataHandler.getUser();
 		sharedpreferences = getActivity().getSharedPreferences(
 				BiteBc.MyPREFERENCES, Context.MODE_PRIVATE);
+		
+
+		
 	}
 
 	@Override
@@ -130,6 +159,24 @@ public class MemberShipThreeMonthFreeSubscription extends Fragment implements
 		termandcondition = (TextView) rootView.findViewById(R.id.t_n_c);
 
 		terms = (CheckBox) rootView.findViewById(R.id.terms);
+		btnSkip = (Button) rootView.findViewById(R.id.btnSkip);
+		Log.e("data",""+sharedpreferences.getString("SECTION_PHP", ""));
+
+		if(sharedpreferences.getString("SECTION_PHP", "").equals("email"))
+			btnSkip.setVisibility(View.VISIBLE);
+		else
+		onClickButton();
+		btnSkip.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				
+				makeRequestToBuyPlan(WSConstant.Web.BUY,
+						planID, user.getCustomerid());
+				
+			}
+		});
 
 		termandcondition.setOnClickListener(new OnClickListener() {
 
@@ -158,11 +205,14 @@ public class MemberShipThreeMonthFreeSubscription extends Fragment implements
 		shareButton.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				if (terms.isChecked()) {
-					publishStory();
-				} else {
+				if(!facebookLoginResponse)
+					onClickButton();
+				else if(!terms.isChecked()) {
 					LogMsg.showAlertDialog(getActivity(), "Error",
-							"Por favor, acepta los términos y condiciones", true);
+							"Por favor, acepta los términos y condiciones.", true);
+				} else {
+					publishStory();
+
 				}
 			}
 		});
@@ -200,14 +250,14 @@ public class MemberShipThreeMonthFreeSubscription extends Fragment implements
 		}
 	};
 
-	private void onSessionStateChange(Session session, SessionState state,
+	/*private void onSessionStateChange(Session session, SessionState state,
 			Exception exception) {
 		if (session != null && session.isOpened()) {
 			shareButton.setVisibility(View.VISIBLE);
 		} else {
 			shareButton.setVisibility(View.INVISIBLE);
 		}
-	}
+	}*/
 
 	@Override
 	public void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -219,6 +269,7 @@ public class MemberShipThreeMonthFreeSubscription extends Fragment implements
 	public void onResume() {
 		super.onResume();
 		uiHelper.onResume();
+		isResumed = true;
 	}
 
 	@Override
@@ -250,7 +301,7 @@ public class MemberShipThreeMonthFreeSubscription extends Fragment implements
 				FacebookDialog shareDialog = new FacebookDialog.ShareDialogBuilder(
 						getActivity())
 						.setName(getMessage())
-						.setLink("http://www.bitebc.ca")
+						.setLink("www.bitemexico.com")
 						.setDescription(" ")
 						.setCaption("Desarrollado por mordedura de México")
 						.setPicture(
@@ -262,17 +313,14 @@ public class MemberShipThreeMonthFreeSubscription extends Fragment implements
 			} else {
 				publishFeedDialog();
 			}
-
 		}
-
 	}
-
 	private void publishFeedDialog() {
 		Bundle params = new Bundle();
 		params.putString("name", getMessage());
 		params.putString("caption", "Desarrollado por Bite Mexico");
 		params.putString("description"," ");
-		params.putString("link", "http://www.bitebc.ca");
+		params.putString("link", "www.bitemexico.com");
 		params.putString("picture",
 				"http://api.bitemexico.com/api/final.png");
 
@@ -450,4 +498,62 @@ public class MemberShipThreeMonthFreeSubscription extends Fragment implements
 		inputManager.hideSoftInputFromWindow(getActivity().getCurrentFocus()
 				.getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
 	}
+	private void makeMeRequest(final Session session) {
+		// Make an API call to get user data and define a
+		// new callback to handle the response.
+		//UI.showProgressDialog(getActivity());
+		Request request = Request.newMeRequest(session,
+				new Request.GraphUserCallback() {
+					@Override
+					public void onCompleted(GraphUser user, Response response) {
+						// If the response is successful
+						if (session == Session.getActiveSession()) {
+							if (user != null) {
+								// Set the id for the ProfilePictureView
+								// view that in turn displays the profile
+								// picture.
+								//UI.hideProgressDialog();
+
+								JSONObject jObject = user.getInnerJSONObject();
+								Log.e("response from faceboo",jObject+"");
+								facebookLoginResponse=true;
+
+								//registerOrLoginUser(jObject,user.getName());
+
+							}
+						}
+						if (response.getError() != null) {
+							UI.hideProgressDialog();
+							// Handle errors, will do so later.
+						}
+					}
+				});
+		request.executeAsync();
+	}
+	 private Session.StatusCallback statusCallback = new
+		 SessionStatusCallback();
+		
+		 public void onClickButton() {
+		 Session session = Session.getActiveSession();
+		 if (!session.isOpened() && !session.isClosed()) {
+		  session.openForRead(new Session.OpenRequest(this).setPermissions(
+		  Arrays.asList("public_profile"))
+		 .setCallback(statusCallback));
+		 session.openForPublish(new Session.OpenRequest(this)
+		.setPermissions(Arrays.asList("publish_actions"))
+		 .setCallback(statusCallback));
+		} else {
+		 Session.openActiveSession(getActivity(), this, true, statusCallback);
+		 }
+		 }
+
+		 private class SessionStatusCallback implements Session.StatusCallback {
+		 @Override
+		 public void call(Session session, SessionState state,
+		 Exception exception) {
+		 makeMeRequest(session);
+		 }
+		
+		 }
+		 
 }

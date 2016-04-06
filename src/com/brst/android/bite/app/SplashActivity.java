@@ -24,6 +24,7 @@ import android.os.Handler;
 import android.provider.Settings.Secure;
 import android.util.Base64;
 import android.util.Log;
+import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request.Method;
@@ -84,11 +85,9 @@ public class SplashActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-
 		setContentView(R.layout.activity_splash);
 		Log.e("splash","splash");
-
-
+		
 		try {
 			versionName = this.getPackageManager().getPackageInfo(
 					this.getPackageName(), 0).versionName;
@@ -99,6 +98,8 @@ public class SplashActivity extends Activity {
 
 		String deviceid = Secure.getString(
 				SplashActivity.this.getContentResolver(), Secure.ANDROID_ID);
+		Log.e("device id",deviceid);
+		//Toast.makeText(getApplicationContext(), deviceid,Toast.LENGTH_SHORT).show();
 
 		uDataHandler = UserDataHandler.getInstance();
 		id = Secure.getString(getContentResolver(), Secure.ANDROID_ID);
