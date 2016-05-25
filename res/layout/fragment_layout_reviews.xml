@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_l_black" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/myviewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/add_review_box" />
+
+    <TextView
+        android:id="@+id/noReview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:text="@string/text_reveiew_empty"
+        android:textSize="20dp" />
+
+    <RelativeLayout
+        android:id="@+id/add_review_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="45dp"
+        android:padding="3dp" >
+
+        <ImageView
+            android:id="@+id/id_btn_slide_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:src="@drawable/btn_slide_left" />
+
+        <ImageView
+            android:id="@+id/id_edit_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/id_btn_slide_left"
+            android:src="@drawable/btn_edit" />
+
+        <ImageView
+            android:id="@+id/id_btn_slide_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+                        android:visibility="gone"
+            
+            android:layout_toRightOf="@+id/id_edit_btn"
+            android:src="@drawable/btn_slide_right" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Bite Mexico</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="tag_line">TAG LINE</string>
+
+    <!-- for facebook -->
+
+    <string name="app_id">513396995498822</string>
+
+    <!-- Realese key for maps -->
+    
+    <string name="g_map_id">IzaSyBkToEyzV5CSfRsicPD_eqgw5P0DX5kW_M</string>
+
+    <!-- Stripe api key -->
+    <string name="pk_test">pk_test_kfsjV0T4mJnVzGkjMwYAKAAY</string>
+    <string name="pk_live">pk_live_lStRo3vDkShaOLxCJiuADcrU</string>
+
+    <!-- Main Activity Registration login -->
+    <string name="text_bite_mexico">Bite México es un club de comensales a gran escala en forma de una aplicación móvil que proporciona a sus miembros descuentos en restaurantes.
+        \nComer en restaurantes puede ser muy caro,esta es la principal razón para que las personas no lo hagan tan seguido como les gustaría.
+        \nCon nuestra aplicación intuitiva serás capaz de localizar todos nuestros restaurantes participantes con solo tocar un botón y ahorrarás cientos o miles de pesos en el transcurso del año.</string>
+    <string name="header_title_membership_plan">Selecciona el tipo de membresía</string>
+    <string name="text_membership_one_month">Free trial is for one month</string>
+    <string name="text_membership_six_month">6 months Membership</string>
+    <string name="text_membership_twelve_month">12 months Membership</string>
+    <string name="tag_at">at</string>
+    <string name="text_sign_up">Regístrate</string>
+    <string name="text_price_1">$0.00</string>
+    <string name="text_price_6">$49.00</string>
+    <string name="text_price_12">$89.00</string>
+    <string name="header_coming_soon">Coming Soon</string>
+    <!-- color codes -->
+
+    <color name="_green">#2e8a83</color>
+    <color name="_d_green">#1a5a57</color>
+    <color name="_l_black">#2a2a2b</color>
+    <color name="_l_white">#f6f7f9</color>
+    <color name="_bgs_g">#1e897f</color>
+    <color name="_l_light_grey">#7f7f7f</color>
+    <color name="bg_add_review">#ebecec</color>
+    <color name="bg_l_white">#f5f5f5</color>
+    <color name="transparent">#00000000</color>
+
+    <string name="title_activity_membership">MembershipActivity</string>
+    <string name="title_activity_home">HomeActivity</string>
+
+    <!--  -->
+    <string name="step_1_title">Lista De Restaurantes</string>
+    <string name="step_1_plan">Tipo de Plan:</string>
+    <string name="step_1_plan_val">6 Month Plan</string>
+    <string name="step_2_plan_val">3 Month Plan</string>
+    <string name="step_1_price">Precio:</string>
+    <string name="step_1_price_val">$0</string>
+    <string name="step_1_time">Tiempo:</string>
+    <string name="step_1_time_val">6 Months</string>
+    <string name="step_2_time_val">3 Months</string>
+    <string name="step_1_plan_total">Total:</string>
+    <string name="step_1_sub_total">Subtotal:</string>
+    <string name="step_1_sub_tota_val">$49.00</string>
+    <string name="step_2_sub_tota_val">$00.00</string>
+    <string name="step_1_promo_code">Ingresa el Código de Promoción:</string>
+    <string name="step_1_promo_code_val">SD75</string>
+    <string name="step_1_total">Total:</string>
+    <string name="step_1_total_val">$47.00</string>
+    <string name="step_2_total_val">$00.00</string>
+    <string name="step_1_user_name">Dean Nrris</string>
+    <string name="step_1_email">Deannrris@gmail.com</string>
+    <string name="btn_apply">Aplicar</string>
+    <string name="btn_place_orger">Realizar Pedido</string>
+
+    <!-- Regestration step two -->
+    <string name="text_reg_step_2_card_number">Número de tarjeta</string>
+    <string name="text_reg_step_2_card_type">Tipo de tarjeta</string>
+    <string name="text_reg_step_2_expiry_date">Fecha de caducidad</string>
+    <string name="text_reg_step_2_cvc_number">Número CVV</string>
+
+    <!-- Restaurant listing -->
+    <string name="home_restaurant_title">Restaurant Listing</string>
+    <string name="home_filter">FILTRO</string>
+    <string name="home_search_nearby">Search restaurants nearby</string>
+
+    <!-- Filter -->
+    <string name="filter_title">FILTRO</string>
+    <string name="filter_people">Núm. De Personas</string>
+    <string name="filter_cuisine">Tipo de Comida</string>
+    <string name="filter_offer_type">Tipo de Oferta</string>
+    <string name="filter_text_availablity">Disponibilidad</string>
+    <string name="filter_done">Enviar</string>
+    <string name="filter_offer_1">2 x 1 en alimentos</string>
+    <string name="filter_offer_2">50% de descuento en alimentos</string>
+
+    <!-- String restaurant Detail -->
+
+    <string name="r_detail_title">GBK-Manchester</string>
+    <string name="r_detail_adr_1">1 Lindsey Street</string>
+    <string name="r_detail_adr_2">Suite C Second Floor</string>
+    <string name="r_detail_adr_city">London</string>
+    <string name="r_detail_btn_checkin">Registrarse</string>
+    <string name="r_detail_btn_share">SHARE</string>
+    <string name="r_detail_tab_detail">DETALLES</string>
+    <string name="r_detail_tab_gallery">GALERIA</string>
+    <string name="r_detail_tab_review">COMENTARIOS</string>
+    <string name="text_dummy">It\'s very amazing food i ever had , Me and my family enjoyed a lot. very nice place to visit.\n Need to improve service !</string>
+
+    <!-- Search constant -->
+
+    <string name="search_text_hint">Ingrese nombre del restaurante</string>
+    <!-- Setting constant -->
+
+
+    <!-- Title -->
+    <string name="title">Title</string>
+    <string name="setting_header">Ajustes</string>
+    <string name="setting_user">Usuario </string>
+    <string name="setting_city">Selecciona tu Ciudad </string>
+    <string name="setting_change_plan">Mi membresía actualmente</string>
+    <string name="setting_about_us">Quienes Somos</string>
+    <string name="term_n_condition">Terminos y Condiciones</string>
+    <string name="setting_how_it_work">Como Funciona Bite Mexico</string>
+    <string name="search_header">Buscar</string>
+    <string name="near_header">Cerca De Mi</string>
+    <string name="setting_city_text">Selecciona tu ciudad, paraver nuestra lista de restaurantes que están disponibles en tu ciudad. Estos establecimientos aparecerán en tu tabla de restaurantes.</string>
+
+    <!-- Review -->
+    <string name="text_reveiew_empty">Ser el primero en hacer un comentario</string>
+
+    <!-- CheckIn -->
+    <string name="text_checkin_confirm_message">El establecimiento deberá llenar</string>
+
+    <!-- about Us -->
+    <string name="text_about_us"> Bite México es un club de comensales a gran escala en forma de una aplicación móvil que proporciona a sus miembros descuentos en restaurantes.\n\nComer en restaurantes puede ser muy caro, esta es la principal razón por la que mucha gente no lo hace tan seguido como le gustaría, con nuestra aplicación intuitiva serás capaz de localizar todos los restaurantes participantes, con solo tocar un botón ahorrarás cientos o miles de pesos en el transcurso del año.\n\nEn Bite México tenemos dos objetivos: ayudar a nuestros miembros a que comer en restaurantes sea más económico y al mismo tiempo ayudamos a los restaurantes a fomentar que nuestros los usuarios coman en sus establecimientos con mayor frecuencia.\n\nTodos nuestros restaurantes ofrecerán descuentos ilimitadamente a los usuarios de Bite esto quiere decir que nuestros miembros no están limitados a usar sus descuentos solo una vez, ellos pueden regresar al mismo restaurant cuantas veces lo deseen, con nuestra membresía Bite México ellos pueden conseguir a mitad de precio sus alimentos en los restaurantes participantes (Ya sea 50% de descuento o 2 por 1 en algunos alimentos o incluso todo el menú esto dependerá de nuestros restaurantes participantes.)</string>
+    <string name="how_bitebc_text1">Obteniendo tu membresía Bite México conseguirás el 50% de descuento o el 2x1 de algunos alimentos en nuestros restaurantes participantes.</string>
+    <string name="how_bitebc_text2"> importante: debes llamar y reservar mencionando que eres miembro de bite mexico. a menos que el icono de llamar no aparezca.</string>
+    <string name="how_bitebc_text3"> 50; - El restaurant ofrece 50 de descuento en el consumo de alimentos a los miembros de Bite México</string>
+    <string name="how_bitebc_text4"> El restaurant ofrece el 2x1 a nuestros miembros en su consumo de alimentos</string>
+    <string name="how_bitebc_text5"> Deberás llamar para reservar y avisar queeres miembro de Bite México</string>
+    <string name="how_bitebc_text6"> Las ofertas para los miembros de Bite México no están disponibles Los viernes después de las 18:30 hrs</string>
+    <string name="how_bitebc_text7"> Las ofertas para los miembros de Bite México no están disponibles los sábados después de las 18:00 hrs</string>
+    <string name="how_bitebc_text8"> Las ofertas para los miembros de Bite México no están disponibles durante la temporada del 15 de Diciembreal 1 de Enero.</string>
+    <string name="how_bitebc_text9"> Indica el Número máximo de personas que pueden reservar con membresía Bite México</string>
+    <string name="terms_and_codition">                1. Introduction
+        	 \n\n1.1	This page (together with the documents referred to on it) tells you the terms and conditions on which we supply Bite diner\’s club membership. Further details regarding Bite diner’s club can be found on our website www.bitebc.ca (our website). Please read these terms and conditions carefully and make sure that you understand them, before ordering your membership for our app. You should understand that by ordering a Bite membership, you agree to be bound by these terms and conditions.             \n\n1.2	You should print a copy of these terms and conditions for future reference.
+             \n\n1.3	Please click on the button marked “I have read and agreed to terms and conditions” on the Bite diner\’s club purchase page on our app if you accept them. By doing so you also agree that you consent to us processing your data in accordance with our privacy policy. Please understand that if you refuse to accept these terms and conditions, you will not be able to purchase a membership with us nor become a member of the club.
+             \n\n1.4	We reserve the right to amend these terms and conditions at any time by giving you notice by posting the amended terms and conditions on our site or within our app. However, please note that you will be subject to the terms and conditions in force at the time that you ordered a membership from us, unless any change to these terms and conditions is required to be made by law or governmental authority (in which case it will apply to orders previously placed by you).\n\n2. Information about us
+\n\n2.1	We operate our site and mobile apps. We are Bite Diners Club Ltd. a company registered in Canada with our registered office at 1055 West Hastings Street, Vancouver, BC,V6E 2E9.
+\n\n3. Your status
+\n\n3.1	By placing an order for a Bite membership through our site or mobile app, you warrant that you are legally capable of entering into binding contracts and you are at least 18 years old.
+\n\n4. How the contract between you and us is formed
+\n\n4.1	After placing an order for a Bite membership, you will receive an e-mail from us acknowledging that we have received your order. Please note that this does not mean that your order has been accepted. Your order constitutes an offer to us to become a member of the club. All orders are subject to acceptance by us. The contract between us will only be formed when we send you a confirmation of acceptance of payment for membership.
+\n\n5. Term
+\n\n5.1	The club is an on-going subscription service so your membership is continuous and your membership is renewed automatically at the end of each membership period. If you do not want to renew your membership you should contact us by email to info@bitebc.ca at any point within your membership period and no later than 5pm on the working day preceding your renewal date. Your renewal date being the day prior to the expiry date stated on your membership plan.You are required to inform us if you change your correspondence email address. We will not beliable for any non-receipt of communication from us.
+\n\n6. Consumer rights
+\n\n6.1	You have the right to cancel your initial registration of membership with us within 14 days of your original purchase. This does not apply to subsequent renewals.
+\n\n6.2	To cancel your membership, you must email us at info@bitebc.ca Monday to Friday 9.00am to 5.00pm. Upon cancellation you will receive a confirmation email; it is recommended that this is kept for your own personal records.
+\n\n6.3	If you cancel your membership within the cooling off period (14 days), you will be entitled to a refund of your membership, less our $10 administration charge for cancellations. Any cancellations after the cooling off period (14 days) are not entitled to any refund.
+\n\n7. Availability and delivery
+\n\n7.1	You will receive access to your membership immediately once payment has cleared and you receive confirmation email, unless there are any exceptional circumstances. In which case please contact us at info@bitebc.ca.
+\n\n8. Price and payment
+\n\n8.1	The price of membership of the club will be subject to change and as quoted on our site or mobile app from time to time, except in cases of obvious error.
+\n\n8.2 Prices include TAX.
+\n\n8.3	Prices are liable to change at any time, but changes will not affect orders in respect of which we have already sent you confirmation.
+\n\n8.4	Payment must be by credit or debit card, or by such other method as we may agree from time to time. We will charge your credit or debit card when your order is placed.
+\n\n9. Participating restaurants and use of your Bite Membership
+\n\n9.1	On presentation of your Bite membership, participating restaurants will offer either 50% off your total food bill (applying to everyone dining in the group; although, the relevant restaurant may place a limit on the maximum number of people per booking (please check our site for details) or 2 for 1 across all courses order (the cheapest item from each course will be deducted from the bill).
+\n\n9.2	Participating restaurants may exclude some days of the week, all of December and bank holidays. Please check our app for which restrictions apply for each restaurant. Mothers\' Day, Fathers\' Day and Valentines\' Day are automatically excluded from the offer. Please refer to individual restaurant details page in our app as other exclusions may apply.
+\n\n9.3	If a participating restaurant has a telephone icon listed on its page on our app or site advance bookings must be made and by calling the restaurant and your use of Bite membership must be mentioned.
+\n\n9.4	Offers advertised on our site or app are only available to members who present their checkin on their mobile phone and their membership is confirmed by the server and is valid. Such offers are not available in conjunction with any other offers that participating restaurants may be running, which may include set menus or any other menus other than the standard a la carte menu.
+\n\n9.5	The expiry date of each Bite Membership will vary and will always be checked at each restaurant. Expired Bite memberships are not accepted by participating restaurants. Memberships are strictly non-transferable and can only be used by named members and their dining partners, up to the limited specified by participating restaurants on our site. Any attempted misuse of your Bite Membership may result in your membership being revoked.
+\n\n9.6	We will use reasonable endeavours to update our site and mobile app to show the particulars of participating restaurants and the terms of their availability for participation in the club. Participating restaurants may, however, be entitled to withdraw from the club or to change the terms and conditions of their availability after you have become a member and we shall have no liability for any such withdrawals or changes in terms and conditions or availability.
+\n\n9.7	Members will have the benefit of any additional restaurants which join the club at a later date and any increase in availability of participating restaurants.
+\n\n9.8	Our printed or online marketing material is intended as a guide of restaurants who are participating at the time of publication and, therefore, may not include all participating restaurants at any one time.
+\n\n10. Our liability
+\n\n10.1	Subject to clause 10.3, if we fail to comply with these terms and conditions, we shall only be liable for the membership fee.
+\n\n10.2	Subject to clause 10.3, we will not be liable for losses that result from our failure to comply with these terms and conditions that fall into the following categories:
+\n\n10.2.1	loss of income or revenue;
+\n\n10.2.2	loss of business;
+\n\n10.2.3	loss of profits; or
+\n\n10.2.4	loss of anticipated savings.
+\n\n10.3	Nothing in this agreement excludes or limits our liability for:
+\n\n10.3.1	death or personal injury caused by our negligence;
+\n\n10.3.2	fraud or fraudulent misrepresentation;
+\n\n10.4	Where you purchase food from any participating restaurant, any losses or liability arising out of, or in connection with, such food shall be the relevant participating restaurant\'s liability. We accept no liability for any bad experiences or bad food at any of the participating restaurants. We will not become involved in any dispute between you and any restaurant.
+\n\n10.5	We do not give any warranty for any goods or services accessed through, or displayed on, our site or mobile app.
+\n\n11. Written communication
+\n\n11.1	Applicable laws require that some of the information or communications we send to you should be in writing. When using our site, you accept that communication with us will be mainly electronic. We will contact you by e-mail or provide you with information by posting notices on our website or social media channels. For contractual purposes, you agree to this electronic means of communication and you acknowledge that all contracts, notices, information and other communications that we provide to you electronically comply with any legal requirement that such communications be in writing. This condition does not affect your statutory rights.
+\n\n12. Notices
+\n\n12.1	All notices given by you to us must be given to The Operations Director at info@bitebc.ca. We may give notice to you at either the e-mail or telephone number you provide to us when placing an order, or in any of the ways specified in clause 11 above. Notice will be deemed received and properly served immediately when posted on our website, 24 hours after an e-mail is sent, or contact by phone, or three days after the date of posting of any letter. In proving the service of any notice, it will be sufficient to prove, in the case of a letter, that such letter was properly addressed, stamped and placed in the post and, in the case of an e-mail, that such e-mail was sent to the specified e-mail address of the addressee.
+\n\n13. Waiver
+\n\n13.1	Failure by us to enforce any of these terms and conditions will not prevent us from subsequently relying on, or enforcing, them.
+\n\n14. Severability
+\n\n14.1	If any court or competent authority decides that any of the provisions of these terms and conditions are invalid, unlawful or unenforceable to any extent, the term will, to that extent only, be severed from the remaining terms, which will continue to be valid to the fullest extent permitted by law.
+\n\n15. Third party rights
+\n\n15.1	A person who is not party to these terms and conditions shall not have any rights under or in connection with it under the Contracts
+\n\n16	Entire agreement
+\n\n16.1	These terms and conditions and any document expressly referred to in them constitute the whole agreement between us and supersede all previous discussions, correspondence, negotiations, previous arrangement, understanding or agreement between us relating to the subject matter of these terms and conditions. We each acknowledge that, in entering into these terms and conditions, neither of us relies on, or will have any remedies in respect of, any representation or warranty (whether made innocently or negligently) that is not set out in these terms and conditions or the documents referred to in them. Nothing in this clause limits or excludes any liability for fraud.</string>
+
+    <string-array name="array_card_type">
+        <item>Visa</item>
+        <item>Visa (débito)</item>
+        <item>tarjeta MasterCard</item>
+        <item>MasterCard (débito)</item>
+        <item>American Express</item>
+        <item>Descubrir</item>
+        <item>Diners Club</item>
+        <item>JCB</item>
+    </string-array>
+    <string-array name="arrary_year_e">
+        <item>2015</item>
+        <item>2016</item>
+        <item>2017</item>
+        <item>2018</item>
+        <item>2019</item>
+        <item>2020</item>
+        <item>2021</item>
+        <item>2022</item>
+        <item>2023</item>
+        <item>2024</item>
+        <item>2025</item>
+        <item>2026</item>
+        <item>2027</item>
+        <item>2028</item>
+        <item>2029</item>
+        <item>2030</item>
+    </string-array>
+    <string-array name="arrary_year_s">
+        <item>2008</item>
+        <item>2009</item>
+        <item>2010</item>
+        <item>2011</item>
+        <item>2012</item>
+        <item>2013</item>
+        <item>2014</item>
+    </string-array>
+    <string-array name="arrary_month">
+        <item> Ene</item>
+        <item> Feb</item>
+        <item> Mar</item>
+        <item> Abr</item>
+        <item> May</item>
+        <item> Jun</item>
+        <item> Jul</item>
+        <item> Ago</item>
+        <item> Sep</item>
+        <item> Oct</item>
+        <item> Nov</item>
+        <item> Dic</item>
+    </string-array>
+
+</resources>
